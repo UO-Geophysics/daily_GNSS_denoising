@@ -1,6 +1,8 @@
 # Graph Neural Network Daily GNSS Denoising
 Repository for the daily GNSS time series denoising using a graph neural network
 
+![overview of denoising](/assets/overview.png "Overview")
+
 ## Preprocessing
 In the preprocessing folder, you will find all the scripts and notebook to prepare the data:
 * 2 download script for UNR and CWU
@@ -17,6 +19,7 @@ Scalers and trends are saved and important to keep for rescaling the results
 * graphs utils: utility functions for the graph construction
 
 ## training and prediction
+![GNN architecture](/assets/GNN.png "GNN architecture")
 * NN_architecture: pytorch geometric GNN class
 * GNN training script: automatically trains on the first n graphs of the dataset and saves the last 400 for testing, equivalent to saving 2022 and 2023 to testing in our use case.
   * Command Line Arguments:
@@ -40,3 +43,6 @@ Scalers and trends are saved and important to keep for rescaling the results
   * rescale and add trend
   * some simple verification figures
   * final cleanup and save
+## References
+TODO Add paper ref
+TODO Add result dataset zenodo
