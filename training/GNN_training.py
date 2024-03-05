@@ -270,8 +270,6 @@ def main():
         mask = MLPNet.get_mask(signal_in.shape[0], 0, device)
         data.n_out, data.e_out, data.z_out = torch.unbind(
             model(signal_in, data.edge_index, data.edge_dist, mask).detach().reshape(-1, 3, signal_shape // 3), dim=-2)
-        data.denoised_n, data.denoised_e, data.denoised_z = (data.signal_n - data.n_out), (
-                data.signal_e - data.e_out), (data.signal_z - data.z_out)
         results.append(data)
     # Logging and saving results
     logging.info(f"evaluation finished")

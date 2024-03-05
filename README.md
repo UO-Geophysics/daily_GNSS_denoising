@@ -7,7 +7,9 @@ In the preprocessing folder, you will find all the scripts and notebook to prepa
 * 2 raw to netcdf to convert and concatenate all stations together for both processing centers
 * station maintenance correction notebook to remove trend using the station maintenance logs, and remove outliers
 * add tremor notebook to co-locate tremors in time and space with the stations (possibility to tune the parameters)
-* resource folder with the necessary files to download and add info to the stations
+* resource folder with the necessary files to download and add info to the stations  
+
+Scalers and trends are saved and important to keep for rescaling the results
 
 ## Graph construction
 * create_graph: main script to launch the graph construction
@@ -32,3 +34,9 @@ In the preprocessing folder, you will find all the scripts and notebook to prepa
               lambda_center=0.1, and post='_experiment_1'.
   * Then predicts for all the graphs in the dataset
 ## Results
+* results_to_nc_daily: Notebook to read the graph results from the GNN and generate a netcdf
+  * read graphs
+  * average the overlapping windows
+  * rescale and add trend
+  * some simple verification figures
+  * final cleanup and save
