@@ -81,7 +81,6 @@ def main():
         # Take only the 25 first for sample
         stations_all = stations_all[:25]
 
-    # stations_all = remove_downloaded_stations(stations_all, mseed_path)
     logging.info(f"{len(stations_all)} stations selected for download")
 
     # Start processing
