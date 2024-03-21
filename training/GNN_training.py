@@ -26,15 +26,14 @@ def get_args():
         - 'hidden_layer' (int): Size of the hidden layer in the neural network.
         - 'nb_epoch' (int): Maximum number of epochs for training.
         - 'dataset_id' (str): Identifier for the dataset being used.
-        - 'lambda_center' (float): Lambda parameter for the center part of the loss function.
         - 'post' (str): Additional string to add at the end of the output filename.
 
     Example:
         ```bash
-        python script.py 0.001 64 100 my_dataset 0.1 _experiment_1
+        python script.py 0.001 64 100 my_dataset _experiment_1
         ```
         This example sets lr=0.001, hidden_layer=64, nb_epoch=100, dataset_id='my_dataset',
-        lambda_center=0.1, and post='_experiment_1'.
+        and post='_experiment_1'.
     """
     import argparse
 
@@ -43,7 +42,6 @@ def get_args():
     parse.add_argument('hidden_layer', type=int, help="size hidden layer")
     parse.add_argument('nb_epoch', type=int, help="max number epoch")
     parse.add_argument('dataset_id', type=str, help="dataset id")
-    parse.add_argument('lambda_center', type=float, help="lambda for the center part of the loss")
     parse.add_argument('post', type=str, help="post str to add at the end of filename")
     return parse.parse_args()
 
