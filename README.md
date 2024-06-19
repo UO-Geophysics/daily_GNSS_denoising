@@ -31,7 +31,7 @@ Scalers and trends are saved and important to keep for rescaling the results
     * 'post' (str): Additional string to add at the end of the output filename.
     * Example:
               `
-              python GNN_training.py 0.001 64 100 my_dataset 0.1 _experiment_1
+              python GNN_training.py 0.001 64 100 my_dataset _experiment_1
               `
               This example sets lr=0.001, hidden_layer=64, nb_epoch=100, dataset_id='my_dataset',
               lambda_center=0.1, and post='_experiment_1'.
