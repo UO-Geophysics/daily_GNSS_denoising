@@ -257,7 +257,7 @@ def main():
     logging.info(f'Getting results for full dataset')
     logging.info(f"dataset path = ../graph_{dataset_id}")
     dataset_test = GNSSDaily(root=f"../graph_{dataset_id}",
-                             pre_transform=KNNGraph(k=5, loop=False, force_undirected=True),
+                             pre_transform=KNNGraph(k=300, loop=False, force_undirected=True),
                              path_ds="../data/clean_daily_test.nc")
     results = []
     # Evaluate model on each data point in the full dataset

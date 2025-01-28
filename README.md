@@ -43,6 +43,11 @@ Scalers and trends are saved and important to keep for rescaling the results
   * rescale and add trend
   * some simple verification figures
   * final cleanup and save
+* Get_started_with_data: Notebook to help getting started after downloading the data from zenodo
+  * load the data
+  * filter the data
+  * plot the data
 ## References
 TODO Add paper ref
-TODO Add result dataset zenodo
+Denoised datasets for all methods for UNR and CWU are available on Zenodo:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13840584.svg)](https://doi.org/10.5281/zenodo.13840584)
