@@ -48,6 +48,8 @@ Scalers and trends are saved and important to keep for rescaling the results
   * filter the data
   * plot the data
 ## References
-TODO Add paper ref
+[Publication](https://seismica.library.mcgill.ca/article/view/1419)  
+Bachelot, L., Thomas, A. M., Melgar, D., Searcy, J., & Sun, Y.-S. (2025). Cascadia Daily GNSS Time Series Denoising: Graph Neural Network and Stack Filtering. Seismica, 2(4). https://doi.org/10.26443/seismica.v2i4.1419  
+
 Denoised datasets for all methods for UNR and CWU are available on Zenodo:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13840584.svg)](https://doi.org/10.5281/zenodo.13840584)
